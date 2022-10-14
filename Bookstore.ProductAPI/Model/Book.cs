@@ -29,5 +29,9 @@ namespace Bookstore.BookAPI.Model
         [Required]
         [StringLength(150)]
         public string Author { get; set; }
+
+        [Column("inventory")]
+        [Required]
+        public int Inventory { get; set; }
     }
 }
